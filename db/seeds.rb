@@ -1,3 +1,5 @@
+require 'csv'
+
 676.times do
   Product.create(
     title: Faker::Coffee.unique.blend_name,
