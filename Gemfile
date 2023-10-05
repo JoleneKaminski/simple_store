@@ -70,3 +70,5 @@ group :test do
   gem "selenium-webdriver"
 
 end
+
+gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'main'
