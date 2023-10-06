@@ -19,7 +19,7 @@ products = CSV.parse(csv_data, headers: true, encoding: 'utf-8')
 products.each do |p|
   category = Category.find_or_create_by(name: p['category'])
 
-  product = category.products.create(
+  category.products.create(
     title: p['name'],
     description: p['description'],
     price: p['price'],
