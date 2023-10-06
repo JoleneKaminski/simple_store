@@ -1,4 +1,6 @@
-<h3><%= @product.title %> Coffee</h3>
+<h3><%= @product.title %></h3>
+<p>Description: <%= @product.description %></p>
 
+<p>Category: <%= @product.category.name %></p>
 <p>Costs: <%= number_to_currency(@product.price, options = {}) %></p>
 <p>There are <%= @product.stock_quantity %> units in stock.</p>
